@@ -153,8 +153,7 @@ body{
 .expandable {
 	float: right;
 	top: 60px;
-/*	font-size: 205px;*/
-	font-size: 100vw;
+	font-size: 205px;
 	line-height: 70px;
 	margin-bottom: -5px;
 	color: white;
