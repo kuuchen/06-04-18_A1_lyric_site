@@ -1,0 +1,235 @@
+/************ audio player ************/
+/*#wrapper{
+	position: relative;
+	text-align: right;
+	width: 300px;
+	margin-right: 0px;
+	z-index: 100;
+	float: right;
+}*/
+
+#wrapper{
+	position: fixed;
+	float: right;
+	right: 50px;
+/*	top: 200px;*/
+	bottom: 50px;
+	z-index: 100;
+/*	text-align: center;*/
+	opacity: 0;
+}
+
+#currentTime{
+	color: white;
+	font-size: 10px;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav{
+/*	background-color: black;*/
+	width: 300px;
+	padding-bottom: 3px;
+	text-align: right;
+	float: right;
+}
+
+#defaultBar{
+	width: 113px;
+	height: 9.5px;
+	position: relative;
+	background-color: #000000;
+	padding: 0px;
+	border: 1px solid white;
+	vertical-align: middle;
+}
+
+#buttons{
+	padding: 0px;
+	vertical-align: middle;
+}
+
+#progressBar{
+	position: absolute;
+	height: 9.5px; 
+	background-color: #ffffff;
+	width: 0px;
+	vertical-align: middle;
+}
+
+#play{
+	background-color: black;
+	border: none;
+	height: 16px;
+	width: 16px;
+	background-image: url("../images/playsmall3.png");
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: middle;
+}
+
+
+/************ general ************/
+div{
+	font-family: Helvetica;
+}
+
+body{
+}
+
+.whole{
+	background-image: url("../images/all_the_stars.jpg");
+	opacity: 1;
+	background-size: 100%;
+	height: 325%;
+	width: 100%;
+	position: absolute;
+	z-index: -100;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.wholecover{
+	background-color: black;
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -99;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	opacity: 0.5;
+}
+
+/************ frame ************/
+.borderBottom{
+	position: fixed;
+	width: 100%;
+	height: 200px;
+/*	background-color: white;*/
+	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+	bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 50;
+}
+
+.borderTop{
+	position: fixed;
+	width: 100%;
+	height: 200px;
+/*	background-color: white;*/
+	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 50;
+}
+
+/************ HEADER & SCROLL ************/
+.info{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	float: right;
+	right: 50px;
+	padding-top: 150px;
+	z-index: 200;
+}
+
+.expandable, .artists{
+	font-family: Helvetica;
+	text-align: right;
+	font-style: italic;
+	font-weight: 700;
+}
+
+.expandable {
+	float: right;
+	top: 60px;
+/*	font-size: 205px;*/
+	font-size: 100vw;
+	line-height: 70px;
+	margin-bottom: -5px;
+	color: white;
+}
+
+.artists{
+	position: relative;
+	font-size: 110px;
+	line-height: 100%;
+	margin: 5px 0px;
+	color: #ffd56f;
+}
+
+/*************  LYRICS *************/
+
+h1{
+	font-family: inherit;
+	font-size: 30px;
+	font-weight: 700;
+	color: #ffd56f;
+	font-style: italic;
+	margin: 10px 0px;
+	padding-left: 200px;
+	width: 200px;
+
+	-webkit-transition: 0.75s ease-out;
+	-moz-transition: 0.75s ease-out;
+	-o-transition: 0.75s ease-out;
+	transition: 0.75s ease-out;
+}
+
+/*h1:hover{
+	color: #ffd56f;
+}*/
+
+p:hover{
+	color: #ffe19a;
+}
+
+p{
+	font-family: inherit;
+	font-size: 11.5px;
+	color: white;
+	font-style: normal;
+	line-height: 15px;
+
+	-webkit-transition: 0.75s ease-out;
+	-moz-transition: 0.75s ease-out;
+	-o-transition: 0.75s ease-out;
+	transition: 0.75s ease-out;
+}
+
+.verse{
+	font-weight: 400;
+}
+
+.prechorus, .chorus{
+	font-weight: 700;
+}
+
+.song{
+	position: relative;
+	top: 700px;
+/*	padding-bottom: 80px;*/
+}
+
+.side2side{
+	display: inline-block;
+	padding-top: 15px;
+	padding-bottom: 15px; 
+}
+
+
+
+
+
+
+
