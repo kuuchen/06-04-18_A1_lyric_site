@@ -35,11 +35,11 @@ bar.addEventListener('click', clickedBar, false);
 function playOrPause(){
 	if(!track.paused && !track.ended){
 		track.pause();
-		play.style.backgroundImage = 'url(../06-04-18_A1_lyric_site/images/playsmall3.png)'
+		play.style.backgroundImage = 'url(../images/playsmall3.png)'
 		window.clearInterval(updateTime);
 	}else{
 		track.play();
-		play.style.backgroundImage = 'url(../06-04-18_A1_lyric_site/images/pausesmall3.png)'
+		play.style.backgroundImage = 'url(../images/pausesmall3.png)'
 		updateTime = setInterval(update, 500);
 	}
 }
@@ -57,7 +57,7 @@ function update(){
 		progressBar.style.width = size + "px";
 	}else{
 		currentTime.innerHTML = "0:00";
-		play.style.backgroundImage = 'url(../06-04-18_A1_lyric_site/images/playsmall3.png)'
+		play.style.backgroundImage = 'url(../images/playsmall3.png)'
 
 		progressBar.style.width = 0 + "px";
 		window.clearInterval(updateTime);
